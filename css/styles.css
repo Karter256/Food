@@ -1,14 +1,35 @@
 :root{
     --accent-color:#09A66D;
     --background-color:#fff;
+    --secondary-background-color:#F3FBF8;
     --text-color:#222222;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
 }
 
 body{
     padding: 10px;
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 }
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -21,7 +42,7 @@ a{
 }
 
 .container{
-max-width: 1220px;
+max-width: 1240px;
 margin: 0 auto;
 }
 /* _________________________________________HEADER_____________________________________________ */
@@ -64,4 +85,91 @@ margin: 0 auto;
     color: var(--background-color);
     font-size: 18px;
     line-height: 20px;
+}
+
+/* ______________________________________FRUITS__________________________________________ */
+
+
+
+
+.fruits {
+    background-color: var(--secondary-background-color);
+    height: 850px;
+
+}
+
+.fruits__container {
+    position: relative;
+    
+}
+.fruits__inner {
+    background-image: url(../images/vegetables.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-blend-mode: darken;
+    background-color: var(--secondary-background-color);
+}
+.fruits__top {
+    background-image: url(../images/falling-grass.png);
+    background-repeat: no-repeat;
+    background-position: -50px;
+    display: flex;
+    flex-direction: column;
+}
+.fruits__top-header {
+    font-family: 'Rosario';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 20px;
+}
+.fruits__top-text {
+    max-width: 637px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.fruits__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 176px;
+}
+
+.fruits__link-text{
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+.fruits__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+.fruit__aside-item {
+    background-color: var(--background-color);
+    width: 250px;
+    height: 116px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.fruit__aside-img{
+    margin: 30px;
+}
+
+.fruit__aside-number {
+    padding-top: 17px;
+    font-size: 48px;
+    line-height: 48px;
+}
+.fruit__aside-text {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 17px;
 }
