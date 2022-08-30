@@ -95,7 +95,6 @@ margin: 0 auto;
 .fruits {
     background-color: var(--secondary-background-color);
     height: 850px;
-
 }
 
 .fruits__container {
@@ -172,4 +171,77 @@ margin: 0 auto;
     text-align: center;
     padding-top: 4px;
     padding-bottom: 17px;
+}
+
+
+/* _______________________________Service___________________________________ */
+
+.service {
+    background-image: url(../images/decore.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -10px;
+    padding-top: 150px;
+}
+.container {
+}
+.service__heading {
+    font-family: 'Rosario';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    padding-bottom: 20px;
+}
+.service__text {
+    max-width: 637px;
+    padding-bottom: 56px;
+}
+.service__middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.service__list {
+    display: flex;
+    flex-direction: column;
+}
+.service__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   width: 500px;
+    height: 160px;
+}
+.service__item-logo {
+    padding-right: 40px;
+    padding-left: 60px;
+}
+.service__item-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 277px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.service__item-header {
+    display: block;
+}
+.service__item-desc {
+    display: block;
+}
+.service__item--two{
+    background-color: var(--secondary-background-color);
+}
+.service__arrow {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.service__logo{
+   width: 600px;
+   transform: translateY(-35px);
 }
