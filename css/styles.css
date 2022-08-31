@@ -40,10 +40,14 @@ a{
     text-decoration: none;
     color: var(--text-color);
 }
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
 
 .container{
-max-width: 1240px;
-margin: 0 auto;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 /* _________________________________________HEADER_____________________________________________ */
 
@@ -59,7 +63,6 @@ margin: 0 auto;
 }
 .menu__list {
     display: flex;
-    margin-left: 100px;
 
 }
 .menu__list-item {
@@ -76,7 +79,6 @@ margin: 0 auto;
 }
 .header__btn {
     margin-left: 32px;
-    margin-right: 100px;
     width: 160px;
     height: 40px;
     background-color: var(--accent-color);
@@ -99,19 +101,21 @@ margin: 0 auto;
 
 .fruits__container {
     position: relative;
+
     
 }
 .fruits__inner {
-    background-image: url(../images/vegetables.svg);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-blend-mode: darken;
     background-color: var(--secondary-background-color);
+    background-image: url(../images/vegetables.svg),url(../images/falling-grass.svg);
+    background-repeat: no-repeat;
+    background-position: 100px 400px , -140px -20px ;
+    background-size: 882px 485px, 612px 408px;
+    background-blend-mode: darken;
+    width: 100%;
+    margin-bottom: 150px;
 }
 .fruits__top {
-    background-image: url(../images/falling-grass.png);
-    background-repeat: no-repeat;
-    background-position: -50px;
+
     display: flex;
     flex-direction: column;
 }
@@ -121,8 +125,8 @@ margin: 0 auto;
     font-size: 70px;
     line-height: 90px;
     text-align: center;
-    padding-top: 92px;
-    padding-bottom: 20px;
+    margin-top: 92px;
+    margin-bottom: 20px;
 }
 .fruits__top-text {
     max-width: 637px;
@@ -148,7 +152,7 @@ margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 50px;
+    
 }
 .fruit__aside-item {
     background-color: var(--background-color);
@@ -179,11 +183,9 @@ margin: 0 auto;
 .service {
     background-image: url(../images/decore.svg);
     background-repeat: no-repeat;
-    background-position: top right;
-    background-position-y: -10px;
-    padding-top: 150px;
-}
-.container {
+    background-size: 944px 531px;
+    background-position: 515px -30px;
+    margin-top: 150px;
 }
 .service__heading {
     font-family: 'Rosario';
@@ -244,4 +246,60 @@ margin: 0 auto;
 .service__logo{
    width: 600px;
    transform: translateY(-35px);
+}
+
+
+/* ___________________________________Special____________________________________ */
+
+.special {
+    margin-top: 145px;
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.special__inner {
+    display: flex;
+
+}
+
+.special__container{
+    width: 1240px;
+    background-image: url(../images/falling-grass.png);
+    background-repeat: no-repeat;
+    background-position: 800px 400px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+
+}
+.special__img {
+    max-width: 600px;
+    margin-top: 80px;
+    padding-right: 50px;
+    margin-bottom: 150px;
+}
+.special__side {
+    max-width: 556px;
+}
+.special__heading {
+    margin-top: 120px;
+    font-family: 'Rosario';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    width: 556px;
+}
+.special__text {
+    width: 574px;
+}
+.special__link {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.special__link-text {
+    padding-right: 20px;
 }
