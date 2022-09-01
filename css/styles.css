@@ -46,7 +46,7 @@ body{
 }
 
 .container{
-    max-width: 1240px;
+    max-width: 1240px; 
     margin: 0 auto;
 }
 /* _________________________________________HEADER_____________________________________________ */
@@ -306,3 +306,69 @@ body{
 
 
 /* ___________________________________customers____________________________________________________ */
+.customer {
+    margin-top: 96px;
+
+}
+
+.slick-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 285px;
+    right: 250px;
+}
+
+
+.slick-next{
+    right:168px ;
+}
+
+.customer__slider {
+    max-width: 640px;
+}
+
+
+.customer__heading {
+    font-family: 'Rosario';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    max-width: 640px;
+
+}
+
+.customer__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer__item-two{
+    margin-left: 100px;
+    position: relative;
+}
+
+.customer__slider + .customer__item {
+    margin-left: 100px;    
+}
+
+.customer__text {
+    max-width: 580px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.customer__name {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.customers__ratings {
+    position: absolute;
+    bottom: -16px;
+    left: -30px;
+}
