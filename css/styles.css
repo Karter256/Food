@@ -372,3 +372,60 @@ body{
     bottom: -16px;
     left: -30px;
 }
+
+/* ____________________________________________Download_______________________________________ */
+
+.download {
+    margin-top: 129px;
+    margin-left: 129px;
+}
+
+.download__inner {
+    display: flex;
+    flex-direction: row;
+}
+.download__item {
+    margin-bottom: 110px;
+}
+.download__item + .download__item {
+    margin-left: 112px;
+}
+
+.download__item-text {
+    margin-top: 57px;
+    margin-bottom: 114px;
+    max-width: 662px;
+
+}
+
+.download_img {
+    margin-top: 22px;
+    margin-left: 40px;
+}
+.download__app {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 11px;
+    background-color: var(--secondary-background-color);
+    display: inline-block;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+.download__heading {
+    font-family: 'Rosario';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+.download__text {
+    max-width: 574px;
+    margin-bottom: 50px;
+}
+.download__shops {
+}
+.download__appstore {
+    margin-right: 24px;
+}
+.download__googleplay {
+}
