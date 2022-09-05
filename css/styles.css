@@ -331,9 +331,10 @@ main{
 }
 
 
-/* ___________________________________customers____________________________________________________ */
+/* ___________________________________Customers____________________________________________________ */
 .customer {
     margin-top: 96px;
+    margin-bottom: 129px;
 
 }
 
@@ -346,7 +347,6 @@ main{
     right: 250px;
 }
 
-
 .slick-next{
     right:168px ;
 }
@@ -355,14 +355,12 @@ main{
     max-width: 640px;
 }
 
-
 .customer__heading {
     font-family: 'Rosario';
     font-weight: 700;
     font-size: 70px;
     line-height: 90px;
     max-width: 640px;
-
 }
 
 .customer__items{
@@ -402,15 +400,13 @@ main{
 /* ____________________________________________Download_______________________________________ */
 
 .download {
-    margin-top: 129px;
-    margin-left: 129px;
-    margin-bottom: 93px;
-}
-
-.download__inner {
+    max-width: 1181px;
+    padding-left: 35px;
     display: flex;
     flex-direction: row;
+
 }
+
 .download__item {
     margin-bottom: 110px;
 }
