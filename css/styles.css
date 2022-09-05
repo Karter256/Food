@@ -73,6 +73,11 @@ main{
     font-size: 18px;
     line-height: 24px;
 }
+
+.header__logo{
+    margin: 0 auto;
+}
+
 .heder__right{
     display: flex;
     align-items: center;
@@ -132,7 +137,7 @@ main{
 
 .fruits__container {
     background-color: var(--secondary-background-color);
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 150px;
     background-color: var(--secondary-background-color);
@@ -240,7 +245,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-   width: 500px;
+    max-width: 500px;
     height: 160px;
 }
 .service__item-logo {
@@ -272,7 +277,7 @@ main{
 }
 
 .service__logo{
-   width: 600px;
+   max-width: 600px;
    transform: translateY(-35px);
 }
 
@@ -410,6 +415,7 @@ main{
 .download__item {
     margin-bottom: 110px;
 }
+
 .download__item + .download__item {
     margin-left: 112px;
 }
@@ -424,6 +430,7 @@ main{
     margin-top: 22px;
     margin-left: 40px;
 }
+
 .download__app {
     font-size: 18px;
     line-height: 18px;
@@ -433,6 +440,7 @@ main{
     border-radius: 50px;
     margin-bottom: 16px;
 }
+
 .download__heading {
     font-family: 'Rosario';
     font-weight: 700;
@@ -440,28 +448,33 @@ main{
     line-height: 90px;
     margin-bottom: 20px;
 }
+
 .download__text {
     max-width: 574px;
     margin-bottom: 50px;
 }
+
 .download__appstore {
     margin-right: 24px;
 }
 /* __________________________________________Footer_______________________________________________ */
 
 
-.footer__inner {
+.footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .footer_text {
     max-width: 345px;
     margin-bottom: 88px;
 }
+
 .footer__logo {
     margin-bottom: 30px;
 }
+
 .footer__heading {
     font-weight: 500;
     font-size: 24px;
@@ -470,14 +483,17 @@ main{
     margin-top: 42px;
 
 }
+
 .footer__list-item {
     margin-bottom: 24px;
     font-size: 18px;
     line-height: 23px;
 }   
+
 .footer__mail {
     margin-bottom: 25px;
 }
+
 .footer__contacts-list {
     display: flex;
     flex-direction: row;
@@ -485,4 +501,119 @@ main{
 }
 .footer__contacts-img {
     margin-right: 25px;
+}
+/* _____________________________________Media________________________________________ */
+
+/* _____________________________________1300 px________________________________________ */
+
+@media (max-width: 1300px){
+.fruits__aside{
+    margin-right: 20px;
+}
+}
+
+/* _____________________________________1200 px________________________________________ */
+
+@media (max-width: 1200px){
+.service__middle{
+    flex-direction: column;
+}
+
+.service__heading, .service__text{
+    margin: 0 auto;
+    text-align: center;
+}
+
+}
+/* _____________________________________800 px________________________________________ */
+
+@media (max-width: 800px){
+
+.header{
+    justify-content: space-evenly;
+}
+
+.menu__list-item{
+    margin: 0;
+}
+
+.menu__list{
+    gap: 20px;
+}
+
+.header__logo{
+display: none;
+}
+
+.heder__right{
+    gap:10px
+}
+
+.header__logo{
+    margin: 10px;
+}
+
+.header__btn{
+    margin-left: 0;
+}
+
+.fruits__top-header{
+    margin-top: 30px;
+}
+
+}
+
+/* _____________________________________625 px________________________________________ */
+
+@media (max-width: 625px){
+
+.service__logo{
+    display: none;
+}
+}
+/* _____________________________________600 px________________________________________ */
+
+@media (max-width: 600px){
+.header{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 110px;
+    align-items: stretch;
+}
+
+
+.heder__right{
+    justify-content: space-around;
+}
+
+.menu__list{
+    justify-content: space-around;
+}
+
+.fruits__top-header{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.service{
+    margin-top: 0;
+}
+
+}
+
+/* _____________________________________400 px________________________________________ */
+
+@media (max-width: 400px){
+.service__item-logo{
+    padding: 0;
+    margin-right: 5px;
+}
+}
+/* _____________________________________350 px________________________________________ */
+
+@media (max-width: 350px){
+ .menu__list{
+    gap: 10px;
+ }
+
 }
