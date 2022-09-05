@@ -4,21 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Organic Food</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
+    <header class="header container">
           <nav class="header__menu">
             <ul class="menu__list">
               <li class="menu__list-item">
@@ -40,131 +32,64 @@
           </a>
           <div class="heder__right">
             <a class="header__search" href="#">
-              <svg
-                width="41"
-                height="40"
-                viewBox="0 0 41 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="20.1943" cy="20" r="20" fill="#F3FBF8" />
-                <circle
-                  cx="19.9609"
-                  cy="19.7666"
-                  r="8.98856"
-                  stroke="#222222"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M26.2126 26.4851L29.7367 30"
-                  stroke="#222222"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <img class="header__search-img" src="images/search.svg" alt="">
             </a>
             <a class="header__buy" href="#">
-              <svg
-                width="41"
-                height="40"
-                viewBox="0 0 41 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="20.1943" cy="20" r="20" fill="#F3FBF8" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M15.6166 27.8203C16.0386 27.8203 16.3816 28.1633 16.3816 28.5853C16.3816 29.0073 16.0386 29.3493 15.6166 29.3493C15.1946 29.3493 14.8526 29.0073 14.8526 28.5853C14.8526 28.1633 15.1946 27.8203 15.6166 27.8203Z"
-                  stroke="#222222"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M26.869 27.8203C27.291 27.8203 27.634 28.1633 27.634 28.5853C27.634 29.0073 27.291 29.3493 26.869 29.3493C26.447 29.3493 26.104 29.0073 26.104 28.5853C26.104 28.1633 26.447 27.8203 26.869 27.8203Z"
-                  stroke="#222222"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M10.9442 11.25L13.0242 11.61L13.9872 23.083C14.0652 24.018 14.8462 24.736 15.7842 24.736H26.6962C27.5922 24.736 28.3522 24.078 28.4812 23.19L29.4302 16.632C29.5472 15.823 28.9202 15.099 28.1032 15.099H13.3582"
-                  stroke="#222222"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M22.3197 18.7969H25.0927"
-                  stroke="#222222"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <img class="header__buy-img" src="images/buy.svg" alt="">
             </a>
-            <button class="header__btn">Regestar Now</button>
+            <button class="header__btn">Regester Now</button>
           </div>
-        </div>
-      </div>
     </header>
     <main class="main">
-      <section class="fruits">
-        <div class="container">
-          <div class="fruits__inner">
-            <div class="fruits__top">
-              <h1 class="fruits__top-header">Organic Fruit & Vegetables</h1>
-              <p class="fruits__top-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                galley...
-              </p>
-            </div>
-            <div class="fruits__link">
-              <p class="fruits__link-text">Order Now</p>
-              <a class="fruits__top-icon" href="#">
-                <img
-                  class="fruits__top-img"
-                  src="images/fruits-link.svg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="fruits__aside">
-              <div class="fruit__aside-item">
-                <img class="fruit__aside-img" src="images/user.svg" alt="" />
-                <div>
-                  <p class="fruit__aside-number">30K</p>
-                  <p class="fruit__aside-text">User Order</p>
-                </div>
+      <section class="fruits ">
+        <div class="fruits__container">
+              <div class="container">
+              <div class="fruits__top">
+                <h1 class="fruits__top-header">Organic Fruit & Vegetables</h1>
+                <p class="fruits__top-text">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a
+                  galley...
+                </p>
               </div>
-              <div class="fruit__aside-item">
-                <img class="fruit__aside-img" src="images/star.svg" alt="" />
-                <div>
-                  <p class="fruit__aside-number">20K</p>
-                  <p class="fruit__aside-text">Reviews(4.8)</p>
-                </div>
+              <div class="fruits__link">
+                <p class="fruits__link-text">Order Now</p>
+                <a class="fruits__top-icon" href="#">
+                  <img
+                    class="fruits__top-img"
+                    src="images/fruits-link.svg"
+                    alt=""
+                  />
+                </a>
               </div>
-              <div class="fruit__aside-item">
-                <img class="fruit__aside-img" src="images/item.svg" alt="" />
-                <div>
-                  <p class="fruit__aside-number">300</p>
-                  <p class="fruit__aside-text">Items</p>
+              <div class="fruits__aside">
+                <div class="fruit__aside-item">
+                  <img class="fruit__aside-img" src="images/user.svg" alt="" />
+                  <div>
+                    <p class="fruit__aside-number">30K</p>
+                    <p class="fruit__aside-text">User Order</p>
+                  </div>
+                </div>
+                <div class="fruit__aside-item">
+                  <img class="fruit__aside-img" src="images/star.svg" alt="" />
+                  <div>
+                    <p class="fruit__aside-number">20K</p>
+                    <p class="fruit__aside-text">Reviews(4.8)</p>
+                  </div>
+                </div>
+                <div class="fruit__aside-item">
+                  <img class="fruit__aside-img" src="images/item.svg" alt="" />
+                  <div>
+                    <p class="fruit__aside-number">300</p>
+                    <p class="fruit__aside-text">Items</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
-      <section class="service">
-        <div class="container">
+      <section class="service container">
           <h2 class="service__heading">Why We Are The Best?</h2>
           <p class="service__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -196,7 +121,7 @@
               <div class="service__item service__item--three">
                 <img class="service__item-logo" src="images/daily.svg" alt="" />
                 <div class="service__item-inner">
-                  <h3 class="service__item-header">24/8 Service</h3>
+                  <h3 class="service__item-header">24/7 Service</h3>
                   <p class="service__item-desc">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -205,28 +130,15 @@
               </div>
               <div class="service__arrow">
                 <a href="#">
-                  <svg
-                    width="15"
-                    height="34"
-                    viewBox="0 0 15 34"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.73039 33.6005C7.12092 33.9911 7.75408 33.9911 8.14461 33.6005L14.5086 27.2366C14.8991 26.8461 14.8991 26.2129 14.5086 25.8224C14.118 25.4318 13.4849 25.4318 13.0944 25.8224L7.4375 31.4792L1.78064 25.8224C1.39012 25.4318 0.756956 25.4318 0.366431 25.8224C-0.0240933 26.2129 -0.0240933 26.8461 0.366431 27.2366L6.73039 33.6005ZM6.4375 0.893433L6.4375 32.8934L8.4375 32.8934L8.4375 0.893433L6.4375 0.893433Z"
-                      fill="#09A66D"
-                    />
-                  </svg>
+                  <img src="images/arrow-down.svg" alt="">
                 </a>
               </div>
             </div>
             <img class="service__logo" src="images/service-logo.png" alt="" />
           </div>
-        </div>
       </section>
-      <section class="special">
-        <div class="container special__container">
-          <div class="special__inner">
+      <section class="special " >
+          <div class="special__inner container">
             <img class="special__img" src="images/special.jpg" alt="">
             <div class="special__side">
               <h2 class="special__heading">Explor Our Special Items</h2>
@@ -244,7 +156,6 @@
     
             </div>
           </div>
-        </div>
       </section>
       <section class="customer">
         <div class="container">
