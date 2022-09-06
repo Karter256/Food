@@ -341,12 +341,17 @@ a{
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 285px;
-    right: 250px;
+    right: 168px;
 }
 
-.slick-next{
-    right:168px ;
+.slick-btn{
+   bottom: 0;
+    right: 160px;
+    max-width: 60px;
+    z-index: 2;
+}
+.slick-prev{
+    right: calc(160px + 82px);
 }
 
 .customer__slider {
@@ -570,6 +575,10 @@ a{
     text-align: center;
 }
 
+.footer_text{
+    padding-left: 20px;
+}
+
 }
 
 /* _____________________________________900 px________________________________________ */
@@ -579,9 +588,14 @@ a{
         display: none;
     }
 
+    .header{
+        max-height: 70px;
+    }
+
     .download__text{
         max-width: 100%;
         margin-bottom: 30px;
+        order: 2;
     }
 
     .download__item-text{
@@ -600,6 +614,14 @@ a{
         margin: 0 auto;
     }
 
+    .download__app{
+        order: 3;
+    }
+
+    .download__shops{
+        order: 4;
+    }
+
     .special{
         margin-top: 30px;
     }
@@ -615,6 +637,14 @@ a{
     .fruits__top-header{
         margin-top: 30px;
     }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
 
 }
 
@@ -658,6 +688,7 @@ display: none;
     margin-top: 30px;
 }
 
+
 }
 
 /* _____________________________________625 px________________________________________ */
@@ -675,6 +706,16 @@ display: none;
 .customer__item-two{
     display: none;
 }
+
+.customer__item-one{
+    position: relative;
+}
+
+
+.slick-btn{
+    transform: translateY(80px) translateX(20px);
+}
+
 }
 /* _____________________________________600 px________________________________________ */
 
@@ -682,7 +723,7 @@ display: none;
 .header{
     flex-direction: column;
     justify-content: space-evenly;
-    height: 110px;
+    max-height: 110px;
     align-items: stretch;
 }
 
@@ -700,8 +741,8 @@ display: none;
 .special__heading, 
 .customer__heading,
 .download__heading{
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .special__heading, .special{
@@ -713,6 +754,39 @@ display: none;
 }
 
 }
+
+
+/* _____________________________________480 px________________________________________ */
+
+@media (max-width: 480px){
+    .footer{
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
+        justify-items: center;
+        gap: 0;
+    }
+
+    .footer_text{
+        grid-column: 1 / span 2;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer__contacts{
+        grid-column: 1 / span 2;
+        max-height: 250px;
+    }
+
+    .footer__heading{
+        margin: 5px 0;
+    }
+
+}
+
 
 /* _____________________________________400 px________________________________________ */
 
